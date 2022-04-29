@@ -1,0 +1,7 @@
+######################################
+# show info at terminal
+######################################
+echo "ROS:            --- ${ROS_DISTRO} ---"
+echo "ROS_IP:         ${ROS_IP}"
+echo "ROS_MASTER_URI: ${ROS_MASTER_URI}"
+

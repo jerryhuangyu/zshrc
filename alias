@@ -1,0 +1,27 @@
+######################################
+# Set personal aliases
+######################################
+alias cl="clear && source ~/zshscripts/showRosInfoOnTop"
+
+# source
+alias update="source ~/.zshrc"
+
+# git
+alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
+function gac(){
+	git add .
+	git commit -m "$@"
+}
+
+# usage
+alias usage='du -sh * | sort -h'
+alias usageh='du -h -d1 | sort -h' 
+
+# ps
+alias rostcp="lsof -i"
+
+# xdg-open
+alias xop="xdg-open ."
+
+# ros
+alias hgr="history | grep ros"
