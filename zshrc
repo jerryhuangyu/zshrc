@@ -55,3 +55,5 @@ export ROS_IP=192.168.50.110
 # my own zsh scripts
 ######################################
 source ~/zshscripts/showRosInfoOnTop
+
+printf '\n%.0s' {1..100}
