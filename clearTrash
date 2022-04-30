@@ -1,9 +1,9 @@
+echo "------------------------------------------------"
 echo "trash usage: "
 echo "------------------------------------------------"
 du -hs ~/.local/share/Trash/files
 echo " "
+echo "------------------------------------------------"
 echo "list of trash: "
 echo "------------------------------------------------"
-la  ~/.local/share/Trash/files
-
-#rm -rf ~/.local/share/Trash/files
+trash-list
