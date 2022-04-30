@@ -3,15 +3,15 @@
 ######################################
 alias cl="clear && source ~/zshscripts/showRosInfoOnTop"
 
-# source
-alias update="source ~/.zshrc"
-
 # git
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches"
 function gac(){
-	git add .
-	git commit -m "$@"
+        vared -p 'commit: ' -c varuser
+        readonly input=${varuser}
+        git add .
+        git commit -m "$input"
 }
+
 
 # usage
 alias usage='du -sh * | sort -h'
@@ -25,3 +25,13 @@ alias xop="xdg-open ."
 
 # ros
 alias hgr="history | grep ros"
+alias roscm="export pwdpath=$(pwd)&&cd ~/catkin_ws&&catkin_make&&cd $pwdpath&&unset pwdpath"
+
+# clear
+alias clear="clear&&printf '\n%.0s' {1..100}"
+alias swapcl="free -m&&sudo swapoff -a&&sudo swapon -a&&free -m"
+
+# zsh
+alias edzrc='nano ~/.zshrc'
+alias update='source ~/.zshrc'
+
