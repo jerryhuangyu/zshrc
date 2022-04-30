@@ -31,6 +31,10 @@ alias roscm="export pwdpath=$(pwd)&&cd ~/catkin_ws&&catkin_make&&cd $pwdpath&&un
 alias clear="clear&&printf '\n%.0s' {1..100}"
 alias swapcl="free -m&&sudo swapoff -a&&sudo swapon -a&&free -m"
 
+# trash
+alias trashs="source ~/zshrc/seeTrash"
+alias trashm="trash-empty && trashs"
+
 # zsh
 alias edzrc='nano ~/.zshrc'
 alias update='source ~/.zshrc'
