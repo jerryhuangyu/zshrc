@@ -2,7 +2,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load.
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="agnoster"
 
 # Change the auto-update behavior
 zstyle ':omz:update' mode auto
@@ -26,8 +27,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-POWERLINE_SCRIPT=/usr/share/powerline/bindings/bash/powerline.sh
-source $POWERLINE_SCRIPT
 
 ######################################
 # ros source the environment
@@ -56,4 +55,4 @@ export ROS_IP=192.168.50.110
 ######################################
 source ~/zshscripts/showRosInfoOnTop
 
-printf '\n%.0s' {1..100}
+#printf '\n%.0s' {1..100}
